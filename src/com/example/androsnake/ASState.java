@@ -4,7 +4,8 @@ import android.view.MotionEvent;
 
 
 public interface ASState {
-	public void init();
+	public void onInit();
+	public void onEnd();
 	public void tick(long delta);
 	public void onDraw(Canvas canvas);
 	public void onPause();
